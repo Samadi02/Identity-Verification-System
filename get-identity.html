@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Identity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Get Identity</h1>
+    <div class="container">
+        <h2>Identity Details Form</h2>
+        <div class="container">
+            <form id="getIdentityForm">
+                <label for="getIdentityId">Enter Identity ID:</label>
+                <input type="text" id="getIdentityId" required><br>
+                <button type="submit">Get Identity</button>
+            </form>
+            <div class="loading" id="getIdentityLoading">Fetching identity...</div>
+            <div id="identityDetails"></div>
+        </div>
+    </div>
+    <button onclick="window.location.href='index.html'">Go Back</button>
+
+    <script src="scripts.js"></script>
+    <script src="gd-ad-scripts.js"></script>
+    <script>
+        document.getElementById('getIdentityForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const identityId = document.getElementById('getIdentityId').value.trim();
+
+            window.location.href = `asked-detail.html?id=${encodeURIComponent(identityId)}`;
+        });
+    </script>
+</body>
+</html>

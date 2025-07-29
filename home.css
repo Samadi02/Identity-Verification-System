@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url('gp_1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 120000px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* Added position relative to keep content above the background */
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Added a background color with transparency */
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
+
+section ul li h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer .container {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info img:hover {
+    transform: scale(1.2);
+}

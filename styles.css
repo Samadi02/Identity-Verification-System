@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #4ca1af);
+    color: #ecf0f1;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('gp_1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(52, 73, 94, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #bdc3c7;
+    border-bottom: 2px solid #4ca1af;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.container p {
+    color: #bdc3c7;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #bdc3c7;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #7f8c8d;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #4ca1af;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4ca1af;
+    color: #ecf0f1;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+}
+
+.loading.active {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Identity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Verify Identity</h1>
+    <div class="container">
+        <h2>Verification Form</h2>
+        <div class="container">
+            <form id="verifyForm">
+                <label for="userAddress">User Address:</label>
+                <input type="text" id="userAddress" required><br>
+                <button type="submit">Verify</button>
+            </form>
+            <div class="loading" id="verifyLoading">Verifying...</div>
+            <div id="verifyStatus"></div>
+            
+        </div>
+    </div>
+    <button onclick="window.location.href='index.html'">Go Back</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
